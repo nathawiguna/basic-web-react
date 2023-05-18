@@ -1,0 +1,69 @@
+body {
+  overflow-x:  hidden;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.container-1 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container-1::before {
+  content: '';
+  height: 100vh;
+  width: 100vw;
+  left: 0px;
+  background-image: url(assets/intro-g-tech-resman.jpg);
+  background-size: 1920px;
+  background-repeat: no-repeat;
+  background-position-x: -500px;
+  background-position-y: 50px;
+  position: absolute;
+  z-index: 0;
+  filter: brightness(60%);
+}
+
+.intro {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: white;
+  padding: 20px;
+  background-color: #282c34;
+  border-radius: 50px;
+  position: relative;
+  z-index: 1;
+  letter-spacing: 4px;
+}
+
+.intro-link {
+  text-decoration: none;
+  color: white;
+}
+
+.intro-link:hover {
+  color: white;
+}
+
+.menu-cont {
+  justify-content: center;
+  gap: 20px;
+}
+
+
